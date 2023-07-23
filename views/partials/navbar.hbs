@@ -1,0 +1,29 @@
+{{!-- Proyecto 25 - Sticky Navbar --}}
+<div class="fontNavbar ">
+    <div class="bodySticky">
+        <nav class="navSticky">
+            <div class="containerSticky">
+                <h2 class="logoSticky"><a href="/"> MenuBox </a></h2>
+                <ul>
+                    <li><a href="./" class="current">Inicio</a></li>
+                    <li><a href="./Nosotros">Nosotros</a></li>
+                    <li><a href="./contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+{{!-- Proyecto 25 - Sticky Navbar --}}
+<script>
+    const nav = document.querySelector('.navSticky')
+    window.addEventListener('scroll', fixNav)
+
+    function fixNav() {
+        if (window.scrollY > nav.offsetHeight + 150) {
+            nav.classList.add('active')
+        } else {
+            nav.classList.remove('active')
+        }
+    }
+</script>

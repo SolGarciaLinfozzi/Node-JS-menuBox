@@ -1,0 +1,156 @@
+<body>
+
+    <div class="heroSticky">
+        <div class="containerSticky tituloPortada">
+            <div class="tituloPortada">Tu menú semanal en la puerta de tu casa</div>
+            <div class="subtituloPortada">Vos elegís tu plan de recetas y nosotros te enviamos todos los ingredientes
+            </div>
+        </div>
+    </div>
+
+    <div class="pasos">
+
+        <div class="telefono" data-aos="fade-right">
+            <img src="/img/app.jpeg" alt="">
+        </div>
+
+        <div class="paso ">
+                <div class="pasoD" data-aos="fade-left">
+                <h3 class="tituloPaso">1. Seleccioná tu plan</h3>
+                <p class="textoPaso">Elegí el plan que más se adapte a tu estilo
+                    <br>
+                    de vida y recibí cajas cada semana hasta que
+                    <br>
+                    canceles. ¿Necesitás cancelar u omitir una
+                    <br> semana? No hay problema.
+                </p>
+                </div>
+                <div class="pasoI" data-aos="fade-left">
+                <h3 class="tituloPaso">2. Recibí tu entrega</h3>
+                <p class="textoPaso">Cada semana, vas a recibir recetas simples,
+                    <br> con instrucciones paso a paso con su
+                    <br> información nutricional e ingredientes frescos y
+                    <br> perfectamente medidos para que puedas
+                    <br> preparar deliciosas cenas en poco tiempo.
+                </p>
+                </div>
+                <div class="pasoD" data-aos="fade-left">
+                <h3 class="tituloPaso">3. Cociná, comé y disfrutá</h3>
+                <p class="textoPaso">La eterna pregunta «¿y hoy qué comemos?»
+                    <br> está a punto de desaparecer de tu vida.
+                    <br> Bienvenida a un mundo donde la cena siempre
+                    <br> es planificada, simple y deliciosa.
+                </p>
+                </div>
+        </div>
+</body>
+
+
+</div>
+
+
+
+
+<div class="queHay" data-aos="fade-up">Beneficios</div>
+
+<div class="beneficios">
+    <div class="">
+        <div class="cardBeneficioI" data-aos="fade-right">
+            <div class="tituloBeneficioI">DELICIOSO</div>
+            <div class="textoBeneficio">Curamos las mejores recetas para garantizar que tus comidas sean tan deliciosas
+                como fáciles de preparar.
+            </div>
+        </div>
+
+        <div class="cardBeneficioI" data-aos="fade-right">
+            <div class="tituloBeneficioI">SIMPLE</div>
+            <div class="textoBeneficio"> Desde recetas paso a paso hasta cambios en tu cuenta sin problemas, hacemos que
+                tu vida sea más fácil de todas las formas posibles.
+            </div>
+        </div>
+
+        <div class="cardBeneficioI" data-aos="fade-right">
+            <div class="tituloBeneficioI">FLEXIBLE</div>
+            <div class="textoBeneficio"> Queremos brindarte una experiencia sin estrés, por lo que podes omitir una
+                semana, pausar tu suscripción o
+                cancelarla en cualquier momento.
+            </div>
+        </div>
+    </div>
+
+    <div class="seccionBenefiosD">
+        <div class="cardBeneficioD" data-aos="fade-left">
+            <div class="tituloBeneficioD">SIN ESTRÉS</div>
+            <div class="textoBeneficio">Recuperá tus tardes con menos viajes al super, comidas planificadas previamente
+                y poca limpieza.
+            </div>
+        </div>
+
+        <div class="cardBeneficioD" data-aos="fade-left">
+            <div class="tituloBeneficioD">VARIEDAD</div>
+            <div class="textoBeneficio">¡Apetitos exigentes bienvenidos! Decinos qué te gusta y qué no te gusta, y te
+                vamos a recomendar algo delicioso.
+            </div>
+        </div>
+
+        <div class="cardBeneficioD" data-aos="fade-left">
+            <div class="tituloBeneficioD">SIN DESPERDICIOS</div>
+            <div class="textoBeneficio">Es fácil ser ecológico con nuestros ingredientes pre-medidos y materiales
+                reciclables y/o biodegradables.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{{!-- Proyecto 01 - Expanding Cards --}}
+{{!-- <div class="container paneles">
+    <div class="panel active img1">
+        <h3> Deliciosas recetas con instrucciones paso a paso para que nunca te pierdas</h3>
+    </div>
+    <div class="panel img2">
+        <h3>Ingredientes de calidad, en la cantidad exacta - Productos frescos y de estación, mezclas exclusivas de
+            especias, y todo sin desperdiciar alimentos</h3>
+    </div>
+    <div class="panel img3">
+        <h3> Packaging 100% biodegradable y reciclable</h3>
+    </div>
+
+</div> --}}
+
+
+{{!-- Proyecto 25 - Sticky Navbar --}}
+<script>
+    const nav = document.querySelector('.navSticky')
+    window.addEventListener('scroll', fixNav)
+
+    function fixNav() {
+        if (window.scrollY > nav.offsetHeight + 150) {
+            nav.classList.add('active')
+        } else {
+            nav.classList.remove('active')
+        }
+    }
+</script>
+
+{{!-- Proyecto 01 - Expanding Cards --}}
+{{!--
+<script>
+    const panels = document.querySelectorAll('.panel')
+
+    panels.forEach(panel => {
+        panel.addEventListener('click', () => {
+            removeActiveClasses()
+            panel.classList.add('active')
+        })
+    })
+
+    function removeActiveClasses() {
+        panels.forEach(panel => {
+            panel.classList.remove('active')
+        })
+    }
+</script> --}}

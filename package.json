@@ -1,0 +1,26 @@
+{
+  "name": "Muestra de diseños",
+  "version": "1.0.0",
+  "description": "Aplicación de muestra de diseños",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "css",
+    "diseño"
+  ],
+  "author": "Maria Sol Garcia Linfozzi",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "nodemailer": "^6.9.1",
+    "path": "^0.12.7",
+    "sweetalert": "^2.1.2"
+  }
+}

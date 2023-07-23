@@ -1,0 +1,176 @@
+
+{{!-- Proyecto 01 - Expanding Cards --}}
+<div class="container paneles">
+    <div class="panel active img1">
+        <h3> Perito Moreno - Santa Cruz</h3>
+    </div>
+    <div class="panel img2">
+        <h3>Cataratas del Iguazú - Misiones</h3>
+    </div>
+    <div class="panel img3">
+        <h3> Cerro de los siete colores - Jujuy</h3>
+    </div>
+    <div class="panel img4">
+        <h3> Río Agrio - Neuquen </h3>
+    </div>
+    <div class="panel img5">
+        <h3>Faro del fin del mundo - Ushuaia </h3>
+    </div>
+</div>
+
+{{!-- Proyecto 12 - FAQ--}}
+
+<h2 class="tituloP12 text-center fyq"> Preguntas Frecuentes </h2>
+
+<div class="faq-container">
+    <div class="faq active">
+        <h3 class="faq-title">
+            ¿Qué medios de pago puedo utilizar para abonar mi compra?
+        </h3>
+
+        <p class="faq-text">
+            Solo efectivo
+        </p>
+
+        <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <div class="faq">
+        <h3 class="faq-title">
+            ¿Con cuánto tiempo de anticipación debo hacer el pedido?
+        </h3>
+        <p class="faq-text">
+            1 semana
+        </p>
+        <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <div class="faq">
+        <h3 class="faq-title">
+            ¿Se pueden realizar cambios?
+        </h3>
+        <p class="faq-text">
+            Se aceptan cambios dentro de los 15 días posteriores a la compra siempre y cuando la prenda este con
+            etiqueta y en condiciones.
+        </p>
+        <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
+
+{{!-- Proyecto 45 - Netflix Mobile Navigation --}}
+
+<div class="NetflixMobileNavigation">
+    <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="nav nav-black">
+        <div class="nav nav-red">
+            <div class="nav nav-white">
+                <button class="nav-btn close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <ul class="list">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Locales</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="#">CABA</a></li>
+                            <li><a href="#">GBA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="/ejemploDeInicio">Ejemplo de inicio</a></li>
+                    <li><a href="/ejemploDeInicioNav">Ejemplo de inicio NAV</a></li>
+                    <li><a href="/ejemploDeInicioSlides">Ejemplo de inicio Vertical Slider</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{!-- Proyecto 07 - Split Landing Page --}}
+    <div class="containerSplitInicio">
+        <div class="split left">
+            <h1>Restaurant</h1>
+            <a href="/" class="botonInicio">Conoce más</a>
+        </div>
+        <div class="split right">
+            <h1>Servicio de Catering</h1>
+            <a href="/" class="botonInicio">Conoce más</a>
+        </div>
+    </div>
+
+{{!-- Proyecto 07 - Split Landing Page --}}
+
+
+<script>
+    const left = document.querySelector('.left')
+    const right = document.querySelector('.right')
+    const container = document.querySelector('.containerSplitInicio')
+
+    left.addEventListener('mouseenter', () => container.classList.add('hover-left'))
+    left.addEventListener('mouseleave', () => container.classList.remove('hover-left'))
+
+    right.addEventListener('mouseenter', () => container.classList.add('hover-right'))
+    right.addEventListener('mouseleave', () => container.classList.remove('hover-right'))
+</script>
+
+
+
+
+{{!-- Proyecto 01 - Expanding Cards --}}
+<script>
+    const panels = document.querySelectorAll('.panel')
+
+    panels.forEach(panel => {
+        panel.addEventListener('click', () => {
+            removeActiveClasses()
+            panel.classList.add('active')
+        })
+    })
+
+    function removeActiveClasses() {
+        panels.forEach(panel => {
+            panel.classList.remove('active')
+        })
+    }
+</script>
+
+{{!-- Proyecto 12 - FAQ--}}
+<script>
+    const toggles = document.querySelectorAll('.faq-toggle')
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            toggle.parentNode.classList.toggle('active')
+        })
+    })
+</script>
+
+{{!-- Proyecto 45 - Netflix Mobile Navigation --}}
+<script>
+    const open_btn = document.querySelector('.open-btn')
+    const close_btn = document.querySelector('.close-btn')
+    const nav = document.querySelectorAll('.nav')
+
+    open_btn.addEventListener('click', () => {
+        nav.forEach(nav_el => nav_el.classList.add('visible'))
+    })
+
+    close_btn.addEventListener('click', () => {
+        nav.forEach(nav_el => nav_el.classList.remove('visible'))
+    })
+</script>
+

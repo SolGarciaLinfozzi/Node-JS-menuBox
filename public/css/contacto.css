@@ -1,0 +1,133 @@
+.bodyContacto{
+    overflow: hidden;
+}
+
+
+/* FORMULARIO CONSULTAS*/
+
+
+.infoMail{
+    font-family: 'Fugaz One', cursive;
+    color: #464646;
+}
+
+.content {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    padding: 0 2em;
+    margin-bottom: 1.8em;
+}
+
+.mail {
+    padding: 0.5em 0 0.5em 1.5em;
+    line-height: 3;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+::-webkit-input-placeholder {
+    color: #464646;
+}
+
+:-ms-input-placeholder {
+    color: #545455;
+}
+
+::-ms-input-placeholder {
+    color: #404041;
+}
+
+::placeholder {
+    color: #4a4a4b;
+}
+
+
+
+.casilla {
+    background-color: #ffffff;
+}
+
+.tituloContacto {
+    margin-bottom: 40px;
+    font-family: 'Fugaz One', cursive;
+    color: #464646;
+}
+
+@media screen and (min-width: 1170px) {
+
+    .cardsLocales {
+        width: 100%;
+        max-width: 800px;
+        height: 340px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 600px;
+    }
+
+    .formContacto {
+        background-image: url(../img/box3.png);
+        background-size: cover;
+        text-align: center;
+        padding: 70px 200px;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .formContacto div {
+        background-color: white;
+        opacity: 0.89;
+        color: black;
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        border-radius: 20px;
+    }
+
+}
+
+/* Boton con efecto */
+
+.botonEfecto2 {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #186b56;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.botonEfecto2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #186b56;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    font-family: 'Fugaz One', cursive;
+}
+
+.botonEfecto2:hover {
+    color: #e8e8e8;
+}
+
+.botonEfecto2:hover::before {
+    width: 100%;
+}

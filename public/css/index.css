@@ -1,0 +1,254 @@
+*{
+    font-family: 'Fugaz One', cursive;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.tituloPortada {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+}
+
+.subtituloPortada {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+
+/* Teléfono */
+
+.telefono{
+    margin-top: 60px;
+}
+
+.pasos{
+    display: flex;
+    justify-content: center;
+}
+
+.paso {
+    margin-top: 35px;
+    font-family: 'Fugaz One', cursive;
+    text-align: center;
+}
+
+.pasoD{
+    margin-left: 200px;
+}
+
+.pasoI{
+    margin-left: 15px;
+}
+
+.tituloPaso {
+    margin-top: 40px;
+    color: #26aa89;
+}
+
+
+
+.heroSticky {
+    background-image: url('../img/portadaMesada.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 90vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.heroSticky::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #36333359;
+    z-index: -1;
+}
+
+.heroSticky h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.heroSticky p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.contentSticky h2,
+.contentSticky h3 {
+    font-size: 150%;
+    margin: 40px 0;
+}
+
+.contentSticky p {
+    color: #555;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+
+/* Beneficios */
+
+.beneficios {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    margin-top: 60px;
+}
+
+.cardBeneficioI {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-style:solid;
+    background-color: #186854;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 200px;
+    width: 350px;
+    height: 180px;
+    color: white;
+    font-family: 'Lilita One', cursive;
+}
+
+
+.textoBeneficio{
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Lilita One', cursive;
+}
+
+.cardBeneficioD {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-style:solid;
+    background-color:#186854;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 150px;
+    width: 350px;
+    height: 180px;
+    color: white;
+    font-family: 'Lilita One', cursive;
+}
+
+.seccionBenefiosD{
+    margin-top: 50px;
+}
+
+.tituloBeneficioI {
+    color: #26aa89;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 40px;
+    font-family: 'Lilita One', cursive;
+}
+
+
+.tituloBeneficioD {
+    color: #26aa89;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 40px;
+    font-family: 'Lilita One', cursive;
+}
+
+
+.queHay {
+    display: flex;
+    justify-content: center;
+    color: #186b56;
+    font-family: 'Fugaz One', cursive;
+    font-size: 40px;
+    margin-top: 90px;
+}
+
+
+/* Proyecto 01 - Expanding Cards */
+
+
+.titulo {
+    margin-top: 50px;
+    font-size: xx-large;
+}
+
+.paneles {
+    font-family: 'Fugaz One', cursive;
+    color: #186b56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.img1 {
+    background-image: url('../img/recetas.jpg');
+}
+
+.img2 {
+    background-image: url(../img/especias.jpg);
+}
+
+.img3 {
+    background-image: url('https://blog.todocartonsk.com.do/hubfs/Empaque-caja-biodegradable-sostenible-reciclable-renovable-medio-ambiente-todocartonsk.jpg');
+}
+
+
